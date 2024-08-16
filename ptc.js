@@ -59,12 +59,7 @@
 // )
 
 ////////////objects///////////
-
-// var person={
-//     name:'ali',
-// age:456,
-// gender:'male'};
-
+  
 // // console.log(person.name)
 
 // // //object destructuring
@@ -111,8 +106,19 @@
 
 // console.log(sum(2,3))
 
-// const sum =(a,b)=>a+b;
-// console.log(sum(5,6))
+// const sume =sum((a,b)=>a+b);
+//  console.log(sume(5,6))
 
-const greet=()=>console.log("hello arow")
-greet()
+// const greet=()=>console.log("hello arow")
+// greet()
+
+//hoc highr order functions
+
+let arr=[1,2,3,3,4,3,2,]
+
+const mapped=arr.map((num)=>num*2);
+const slicedd=arr.filter((num)=>num%2==0)
+const reduced=arr.reduce((acc,num)=>acc+num,0)
+console.log(slicedd)
+console.log(mapped);
+console.log(reduced);
